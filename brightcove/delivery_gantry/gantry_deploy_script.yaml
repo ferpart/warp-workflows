@@ -1,0 +1,11 @@
+name: Deploy commit to gantry
+command: ./scripts/deploy -e {{env}} -t {{tag}}
+tags:
+  - gantry deploy
+description: Deploys a docker tag to env
+arguments:
+  - name: env
+    description: Environment to deploy to
+    default_value: qa
+  - name: tag
+    description: Tag to deploy to env

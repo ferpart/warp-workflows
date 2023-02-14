@@ -1,0 +1,5 @@
+name: List fleet deploy status
+command: ./fabric deploy-status
+tags:
+  - fleet status
+description: Lists the status of all fleet applications

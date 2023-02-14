@@ -1,0 +1,12 @@
+name: Promote fleet version
+command: ./fabric promote --from {{env-a}} --to {{env-b}} --pattern {{pattern}}
+tags:
+  - fleet promote
+description: Promotes version of service from env a to env b
+arguments:
+  - name: env-a
+    description: Environment to promote from
+  - name: env-b
+    description: Environment to promote to
+  - name: pattern
+    description: Pattern of service/services to promote

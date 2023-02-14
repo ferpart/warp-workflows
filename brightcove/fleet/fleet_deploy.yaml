@@ -1,0 +1,12 @@
+name: Deploy fleet version
+command: ./fabric deploy --service {{service}} --ref {{sha}} --environment {{env}}
+tags:
+  - fleet deploy
+description: Deploys a commit for a service
+arguments:
+  - name: service
+    description: Service to deploy
+  - name: sha
+    description: Git SHA of commit to deploy
+  - name: env
+    description: Environment to deploy service

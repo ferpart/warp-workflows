@@ -1,0 +1,8 @@
+name: List fleet deploy status with pattern
+command: ./fabric deploy-status --pattern {{pattern}}
+tags:
+  - fleet status
+description: Lists the status of all fleet applications
+arguments:
+  - name: pattern
+    description: Pattern of service/services to show status of
