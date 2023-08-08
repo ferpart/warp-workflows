@@ -1,0 +1,12 @@
+name: Login to gantry environment
+command: gantry-login {{env}} {{region}} 
+tags:
+  - gantry login
+description: Logs into k8s for specified env, region
+arguments:
+  - name: env
+    description: Environment to login into
+    default_value: qa
+  - name: region
+    description: Region to login into
+    default_value: us-east-1

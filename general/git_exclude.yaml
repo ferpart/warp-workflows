@@ -1,0 +1,9 @@
+name: Git Exclude 
+command: echo "{{toExclude}}" >> .git/info/exclude
+tags:
+  - git exclude
+description: Excludes files/dirs from git
+arguments:
+  - name: toExclude
+    description: files/dirs to exclude
+    default_value: env/

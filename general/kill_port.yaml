@@ -1,0 +1,9 @@
+name: Git Exclude 
+command: lsof -i :{{port}} -sTCP:LISTEN | awk 'NR > 1 {print $2}' | xargs kill -15
+tags:
+  - port kill 
+description: Kills the specified application using port 
+arguments:
+  - name: port
+    description: port to kill
+    default_value: 8010
